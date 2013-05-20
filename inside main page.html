@@ -13,7 +13,7 @@
 		<div id="temp" style="position:absolute;width:100%;height:768px;z-index:-1">
 			<div style="background:url(images/screenshot1.png) no-repeat;width:1024px;height:768px;margin:0 auto"></div>
 		</div>
-		<div id="masterWrapper" style="opacity:0.9">
+		<div id="masterWrapper">
 			<header class="main" style="background:#ececec">
 				<div class="wrapper">
 					<div class="sticky-header">
@@ -64,10 +64,15 @@
                                </ul>
                         </span>
 
-						<div class="sticky-header-grey-box sticky-header-profile">
-							<div>
-								10
-							</div>
+                        <div class="outer-b sticky-header-grey-box sticky-header-profile">
+
+                            <a href="#" class="img-mask">
+                                <img width="49" height="49" src="images/twitter-quote.png" alt="profile" title="profile">
+                                <div>
+                                    10
+                                </div>
+                                <i class="overlay"></i>
+                            </a>
                             <ul>
                                 <li>
                                     <a href="#">
@@ -76,22 +81,24 @@
                                 </li>
                                 <li class="profile-list">
                                     <a href="#">
-                                       <div>10</div>
-                                       Notifications
+                                        <div>10</div>
+                                        Notifications
                                     </a>
                                 </li>
                                 <li>
                                     <a href="#">
-                                       Logout
+                                        Logout
                                     </a>
                                 </li>
                             </ul>
-						</div>
-
-						<div class="sticky-header-grey-box sticky-header-up"></div>
-						<div class="sticky-header-grey-box sticky-header-search">
-							<input type="text" placeholder="search">
-						</div>
+                        </div>
+                        <div class="sticky-header-grey-box sticky-header-up">
+                            <a href="#">
+                                <div style="width: 40px; height: 40px; border-radius: 30px 30px 30px 30px; position: relative;box-shadow:inset -1px -1px 0 #fff,inset 1px 1px 0 #c0c0c0">
+                                    <img width="20" height="22" src="images/arrow-up-b.png" alt="up" title="up" style="position: absolute; top: 8px; left: 10px;">
+                                </div>
+                            </a>
+                        </div>
 					</div>
 				</div>
 			</header>
@@ -152,9 +159,11 @@
 				</div>
 			</section>
 			<section id="stream">
-				<header class="wrapper">
-					<span>Stream</span><i></i>
-				</header>
+            <div class="pro-header-a">
+                <section class="popular-section" style="margin-top:7px;">
+                    <span>Stream</span>
+                </section>
+            </div>
 				<section>
 					<div>
 						<section>
