@@ -2708,6 +2708,7 @@ display:none;
    padding: 5px 0 5px 11px;
 }
 .loc-tooltip{
+width:70px;
  position:absolute;
  font-size:12px;
  color: #fff;
@@ -2715,7 +2716,7 @@ display:none;
  border-radius:2px;
  padding:5px 10px;
  top:-24px;
- right:-25px;
+ right:-36px;
  display:none;
    }
 
