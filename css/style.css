@@ -233,6 +233,7 @@ i{
     background: url('../images/arrow-normal.png') no-repeat;
 }
     }
+
 section:hover{
     box-shadow: 2px 2px 10px 0px #ccc;
     cursor: pointer;
@@ -242,19 +243,6 @@ section:hover{
     -moz-animation:myfirst .2s; /* Firefox */
     -webkit-animation:myfirst .2s; /* Safari and Chrome */
     -o-animation:myfirst .2s; /* Opera */
-
-
-
-.mat6{
-    display: block;
-}
-.mat5{
-    display: none;
-}
-.mat3{
-    display: block;
-}
-
     }
 
 
@@ -791,7 +779,7 @@ li.mat1-b{
 section .mat4{
     position: absolute;
     /*background: url('../images/heart2.png') no-repeat;*/
-    bottom:10px;
+    bottom:0px;
     right:7px;
     width:27px;
     height: 25px;
@@ -799,7 +787,7 @@ section .mat4{
 section .loc-img{
     position: absolute;
     background: url('../images/location-b.png') no-repeat;
-    bottom:13px;
+    bottom:3px;
     right:40px;
     width:20px;
     height: 22px;
@@ -820,7 +808,7 @@ section .loc-img{
     position: absolute;
     color: #darkgrey;
     font-size:16px;
-    bottom:15px;
+    bottom:6px;
     left:7px;
 
 }
@@ -849,6 +837,142 @@ left:20px;
 }
 
 .set1 {
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     position: absolute;
     overflow: hidden;
     left: 445px;
@@ -2171,8 +2295,8 @@ text-align:center;
                top: 0px;
                left:0px;
                position: absolute;
-                height: 305px;
-                   width: 305px;
+                height: 320px;
+                width: 100%;
                box-shadow:0 28px 28px -18px rgba(0, 0, 0, 0.7) inset, 0 -28px 28px -18px rgba(0, 0, 0, 0.7) inset;
               position: absolute;
              margin: 0px;
