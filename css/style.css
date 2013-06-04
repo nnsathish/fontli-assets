@@ -243,14 +243,14 @@ section:hover{
     -moz-animation:myfirst .2s; /* Firefox */
     -webkit-animation:myfirst .2s; /* Safari and Chrome */
     -o-animation:myfirst .2s; /* Opera */
-    }
+}
 
 
 
 footer{
     margin:20px 0px 10px 0px;
  a.profile-img{
-       position:relative;
+   position:relative;
    border-radius: 50px;
    height:50px;
    width:50px;
@@ -259,16 +259,16 @@ footer{
    overflow: hidden;
 
 
-   div.overlap{
-           pointer-event: none;
-           position: absolute;
-           height:50px;
-           width:56px;
-           box-shadow: 8px 7px 10px 4px rgba(0, 0, 0, 0.5) inset;
-           left: -8px;
-           position: absolute;
-           top: 0px;
-           border-radius: 50px;
+ div.overlap{
+   pointer-event: none;
+   position: absolute;
+   height:50px;
+   width:56px;
+   box-shadow: 8px 7px 10px 4px rgba(0, 0, 0, 0.5) inset;
+   left: -8px;
+   position: absolute;
+   top: 0px;
+   border-radius: 50px;
    }
 }
 ul{
@@ -1164,6 +1164,9 @@ a{
 div.popup.child.open,div.popup.child.closed{
 margin:0 auto;
 }
+div.popup.child.open ul.set1{
+display:none;
+}
  div.popup.child.open .right-pop{
  ul.auto-suggestion{
        background: none repeat scroll 0 0 #FFFFFF;
@@ -1799,6 +1802,8 @@ a.pro-img-big{
 div a{
     color:#666;
     font-size:14px;
+    margin-left: 10px;
+    float:right;
 
 }
     }
@@ -1825,7 +1830,6 @@ div a{
     background: #e32626;
     color:#fff;
     font-weight:bold;
-    text-shadow: 0px 1px rgba(0,0,0,0.1);
 
 }
 
@@ -1833,8 +1837,6 @@ div a{
     border: 1px solid #b73535;
        background-color: #ff0000;
        color: #fff;
-       box-shadow: 0px 0px 4px 2px #B73535 inset  ;
-         text-shadow: 0px -1px #c5c5c5;
 }
 
 /* Custom styles */
