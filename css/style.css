@@ -142,8 +142,6 @@ h2{
 }
     }
 
-
-
 #stream-4 div.my-update {
 h1{
     color: #333333;
@@ -245,8 +243,6 @@ section:hover{
     -o-animation:myfirst .2s; /* Opera */
 }
 
-
-
 footer{
     margin:20px 0px 10px 0px;
  a.profile-img{
@@ -257,7 +253,6 @@ footer{
    display: inline-block;
    float:left;
    overflow: hidden;
-
 
  div.overlap{
    pointer-event: none;
@@ -338,14 +333,6 @@ span{
     100% {top:-5px;}
 }
 
-
-
-
-
-
-
-
-
 .mobpic{position: absolute;left: -235px;top:8px;z-index: 99;}
 .phone-top{position: absolute;top:77px;left: 19px;}
 .qrcode{position: absolute;right: -222px;top: 30px;height:124px;width:162px}
@@ -378,7 +365,6 @@ div.qrcode{
 width:325px;
 }
 
-
 .controls{
     text-align: center;position: relative;top:-210px;
 a.prev-page{
@@ -403,7 +389,6 @@ a.next-page:hover, a.prev-page:hover { opacity: 1.0; }
     padding:10px 0px;
     height: 47px;
 }
-
 
 .grey-box{
     display: inline;
@@ -545,15 +530,12 @@ width:160px;
       }
     }
 
-
     span a.outer{
     top:8px ;
 
     span a.outer:hover{
     top:8px;
     }
-
-
 
     }
     span a.outer:hover{
@@ -700,8 +682,6 @@ div.outer-b:hover{
     border-top:1px solid #ccc;
     }
 
-
-
     li a{
     padding:8px;
     }
@@ -837,142 +817,6 @@ left:20px;
 }
 
 .set1 {
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     position: absolute;
     overflow: hidden;
     left: 445px;
@@ -1439,8 +1283,6 @@ span{
     }
 }
 
-
-
 .set3b{
     bottom: 20px;
     margin: 0 auto;
@@ -1669,8 +1511,6 @@ float:right;
   ul{
       display:inline-block;
 
-
-
   li{
       display: inline;
       float: left;
@@ -1701,14 +1541,10 @@ box-shadow:0 3px 3px rgba(0, 0, 0, 0.15);
     background:url("../images/Asset-fontli-2a - No Top Shadow.png") repeat;
     box-shadow:0 3px 3px rgba(0,0,0,0.15);
 
-
-
 ul{
     clear: both;
     display:inline-block;
     margin-left:15px;
-
-
 
 li{
     display: inline;
@@ -2022,9 +1858,7 @@ p{
     }
 
 
-
 /*ipad landing popup page style ends*/
-
 
 /*pop page related styling*/
 
@@ -2220,13 +2054,10 @@ color: #999;
 
 /*font details page starts*/
 
-
-
 .font-details{
 padding:30px 0 20px;
 background:#fff;
 overflow:hidden;
-
 
 div.left-panel{
 width:550px;
@@ -2271,8 +2102,6 @@ font-size:16px;
 text-align:center;
 }
 }
-
-
 
 }
 .overlap-d{
@@ -2446,8 +2275,6 @@ top:10px;
        box-shadow: 0 -2px 0 0 rgba(0, 0, 0, 0.2) inset;
    	border: 1px solid rgba(0, 0, 0, 0.3);
    	margin-top:19px;
-
-
    }
 
    button:hover{
@@ -2850,8 +2677,6 @@ width:70px;
  display:block;
  }
 
-
-
 /* search page*/
 
 .pro-header-s{
@@ -3046,10 +2871,6 @@ h1{
     }
     }
 }
-
-
-
-
 
 
 /*---------------------------------------------------
