@@ -3,7 +3,7 @@
 @lightgrey: #999999;
 @darkgrey: #333;
 
-@media only screen and (max-width: 1600px) {
+@media only screen and (max-width: 480px) {
   body{
   min-width:100%;
 
