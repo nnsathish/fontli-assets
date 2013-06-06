@@ -1927,7 +1927,9 @@ div.pop-text{
 #popup_container { background-color:rgba(0, 0, 0, 0.8); }
 .wrap { overflow:hidden;  box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.7);height:158px;position:relative; }
 .twitter-share-button { width:90px !important; }
-
+div.wrap.slide-banner{
+height:305px;
+}
 /* faq/privacy specific css begins*/
 .faq-container{
   line-height: 1.5em;
