@@ -423,12 +423,19 @@ background: url("http://localhost/fontli-assets/css/../images/search.png") no-re
 .grey-box.search:hover{
 background: url("http://localhost/fontli-assets/css/../images/search.png") no-repeat scroll 15px 12px #FFFFFF;
   box-shadow: 1px 2px 1px 1px rgba(0, 0, 0, 0.42) inset;
-  input{
+
+input{
+background:#fff;
+}
+
+}
+input:focus{
 background:#fff;
 color:#4d4d4d;
 width:160px;
-
-
+.grey-box.search{
+ background: url("http://localhost/fontli-assets/css/../images/search.png") no-repeat scroll 15px 12px #FFFFFF;
+   box-shadow: 1px 2px 1px 1px rgba(0, 0, 0, 0.42) inset;
 }
 
 }
@@ -813,7 +820,7 @@ color:#4d4d4d;
 
 
 .set1.icons{
-left:20px;
+left:10px;
 }
 
 .set1 {
@@ -828,7 +835,7 @@ li{
     position: relative;
     padding:10px;
     overflow: hidden;
-    width:20px;
+    width:25px;
 i{
     display: inline-block;
 }
@@ -836,9 +843,7 @@ div{
     display:none;
 }
     }
-li:hover{
-width:30px;
-}
+
 li:last-child:hover{
 width:45px;
 }
@@ -852,7 +857,7 @@ div{
     height:44px;
     width:33px;
     padding:10px;
-    background: url('../images/Like-Enlarged.png') no-repeat;
+    background: url('../images/Like-Enlarged.png') no-repeat ;
 }
     }
 li.set1-b{
@@ -871,12 +876,14 @@ li.set1-c{
 i{
     width: 22px;
     height: 47px;
-    background: url('../images/comment1.png') no-repeat 0px 2px;
+    background: url('../images/comment1.png') no-repeat -0px 2px;
 }
 div{
     height:43px;
     width:53px;
-    background: url('../images/Comment-Enlarged.png') no-repeat;
+    background: url('../images/Comment-Enlarged.png') no-repeat -0px 0px;
+    position:relative;
+    left:-10px;
 }
     }
 li.set1-d{
@@ -1346,6 +1353,7 @@ overflow: hidden;
     }
 .set3{
  width:480px;
+ display:none;
 .opacity(@opacity: 0);
 .transition(@duration:1s,@ease:ease);
     }
@@ -1354,6 +1362,9 @@ overflow: hidden;
 .transition-dimension(@dimension:margin-left, @duration:0.5s);
     }
     }
+.popup.open ul.set1{
+display:none;
+}
 
 /* Profile Page */
 .pro-header-a{
@@ -1691,12 +1702,8 @@ div[rel=popitup], li[rel=popitup] { cursor:pointer; }
 
 /*limelight clean up page styling starts*/
 
-#limelight-content{
-margin-top:30px;
-}
-
 #limelight-markup{
-    margin: 0 auto;
+    margin-top:30px;
 
 div.left-content{
 float:left;
