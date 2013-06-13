@@ -408,7 +408,7 @@ input{
 }
 
 input:hover{
-background: url("http://localhost/fontli-assets/css/../images/search.png") no-repeat scroll 15px 12px #FFFFFF;
+background: url("../images/search.png") no-repeat scroll 15px 12px #FFFFFF;
 
 
 }
@@ -421,7 +421,7 @@ background: url("http://localhost/fontli-assets/css/../images/search.png") no-re
 
 }
 .grey-box.search:hover{
-background: url("http://localhost/fontli-assets/css/../images/search.png") no-repeat scroll 15px 12px #FFFFFF;
+background: url("../images/search.png") no-repeat scroll 15px 12px #FFFFFF;
   box-shadow: 1px 2px 1px 1px rgba(0, 0, 0, 0.42) inset;
 
 input{
@@ -434,8 +434,8 @@ background:#fff;
 color:#4d4d4d;
 width:160px;
 .grey-box.search{
- background: url("http://localhost/fontli-assets/css/../images/search.png") no-repeat scroll 15px 12px #FFFFFF;
-   box-shadow: 1px 2px 1px 1px rgba(0, 0, 0, 0.42) inset;
+ background: url("../images/search.png") no-repeat scroll 15px 12px #FFFFFF;
+ box-shadow: 1px 2px 1px 1px rgba(0, 0, 0, 0.42) inset;
 }
 
 }
@@ -575,7 +575,7 @@ width:160px;
 
     li{
          border-top: 1px solid transparent;
-         border-bottom: 1px solid transparent   ;
+         border-bottom: 1px solid transparent;
          border-opacity: 0;
     }
 
@@ -1160,7 +1160,7 @@ a{
     }
     a.profile-img{
         padding:24px;
-        background: url('/images/pro-a.png') no-repeat;
+        background: url('../images/pro-a.png') no-repeat;
         float: left;
         border-radius: 24px;
         margin: 0px 7px 0px 0px;
@@ -2427,7 +2427,7 @@ h4{
  background:#fff;
 }
 .grey-box.search-sticky{
-    background: url("http://localhost/fontli-assets/css/../images/search.png") no-repeat scroll 15px 12px #FFFFFF;
+    background: url("/images/search.png") no-repeat scroll 15px 12px #FFFFFF;
     box-shadow: -1px -1px 0 #FFFFFF inset, 1px 1px 0 #C0C0C0 inset;
     padding: 8px 0 3px 27px;
   border:none;
