@@ -1384,7 +1384,7 @@ span{
     width:350px;
     div.spotted{
       .transition(@duration:.5s,@ease:ease);
-    display:block;
+    display:block !important;
 
     }
 
@@ -1408,7 +1408,7 @@ img {vertical-align:-5%;}
       border-radius: 1px 1px 1px 1px;
       color: rgb(255, 255, 255);
       padding:3px 0px;
-      width: 80px;
+      width: 70px;
       text-align: center;
       cursor:pointer;
 
@@ -1420,7 +1420,7 @@ img {vertical-align:-5%;}
       border-radius: 1px 1px 1px 1px;
       color: rgb(255, 255, 255);
       padding:3px 0px;
-      width: 80px;
+      width: 100px;
       text-align: center;
       cursor:pointer;
     }
@@ -3024,7 +3024,6 @@ h1{
     width: 305px;
 .img-tile{
 float:left;
-background:url(../images/pok1.png) no-repeat;
 width:157px;
 height:157px;
 }
@@ -3083,7 +3082,13 @@ right:-25px;
     height: 22px;
     width: 20px;
 }
-
+#tag_locator{
+  position: absolute;
+  top: 200px;
+  left: 125px;
+  width: 250px;
+  p { padding:10px; background-color:#000; color:#fff; font-weight:bold; }
+}
 
 
 /*---------------------------------------------------
@@ -3241,4 +3246,3 @@ right:-25px;
   -ms-transform: translate(@x, @y);
   transform: translate(@x, @y);
 }
-
