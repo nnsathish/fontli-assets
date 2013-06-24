@@ -3082,7 +3082,13 @@ right:-25px;
     height: 22px;
     width: 20px;
 }
-
+#tag_locator{
+  position: absolute;
+  top: 200px;
+  left: 125px;
+  width: 250px;
+  p { padding:10px; background-color:#000; color:#fff; font-weight:bold; }
+}
 
 
 /*---------------------------------------------------
@@ -3240,4 +3246,3 @@ right:-25px;
   -ms-transform: translate(@x, @y);
   transform: translate(@x, @y);
 }
-
