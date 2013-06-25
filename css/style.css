@@ -1223,7 +1223,7 @@ a{
              }
 
     .like-box{
-        overflow: visible;
+        overflow: auto;
         padding:0 6px 0 0;
          input[type="text"]{
             border:none;
@@ -1580,7 +1580,7 @@ a.header-link{
     color: #666;
     font-weight: bold;
 }
-a.header-user{
+span.header-user{
     font-size:16px;
     color: #999;
     font-weight: bold;
