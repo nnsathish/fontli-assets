@@ -12,7 +12,12 @@
   width:100%;
   margin:0;
   }
-  a.storify-link { font-size:10px; color:#000; float: left;margin-left: 20px;}
+  a.storify-link {
+   font-size:10px;
+   color:#000;
+   float: left !important;
+   margin-left: 20px !important;
+   }
         .popup{
         height: auto;
         overflow:visible;
@@ -114,6 +119,7 @@
         -moz-border-radius: 50%;
         border-radius: 50%;
         display: inline-block;
+        vertical-align:top;
         overflow: hidden;
         float: left;
         width:12%;
@@ -315,7 +321,7 @@ overflow:hidden;
 padding:3% 2%;
 
   .cite{
-    float: left;
+    float: left !important;
   }
 }
 footer.main ul li{
@@ -323,21 +329,20 @@ margin-right:2%;
 }
 #slider1.slider{
        ul{
-       width:150%;
        height: 480px;
        overflow:hidden;
        li{
        width:auto;
        height:100%;
        div{
-       width:480px;
-       height:480px;
+       width:480px !important;
+       height:480px !important;
        div.img-shadow{
-         width:480px;
-         height:480px;
+         width:480px !important;
+         height:480px !important;
         img{
-          width:480px;
-         height:480px;
+          width:480px !important;
+         height:480px !important;
         }
        }
        }
@@ -345,7 +350,10 @@ margin-right:2%;
        }
 }
 #banner .big{
-  background-color: #000;
-  height: 480px;
+  background-color: #000 !important;
+  height: 480px !important;
+}
+footer.main{
+padding:5% 3%;
 }
 }
