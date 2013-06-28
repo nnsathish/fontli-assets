@@ -14,13 +14,50 @@ header.main		{color:@grey}
 #logo 		{background:url(../images/logo.png) no-repeat;width:78px;height:47px;text-indent:-9999px;display:block;float:left}
 
 header.main{
-.primary {overflow:hidden;padding: 15px 0;border-bottom:solid 1px #545454}
+.primary {overflow:hidden;padding: 15px 0 5px;border-bottom:solid 1px #545454}
 .primary {
-#signup,span{float:right;font-size:22px;margin:0 10px;padding: 25px 0 0px;
+ul{
+        background: none repeat scroll 0 0 #111;
+        border-top:none;
+        top: 65px;
+        right: 0px;
+        width: 166px;
+        position:absolute;
+        z-index:10;
+        box-shadow: 2px 1px 5px rgba(0,0,0,.3);
+        border-radius:3px;
+        border: 1px solid #0A0A0A;
+        height:150px;
+
+
+    li:last-child{
+    }
+
+    li:first-child{
+    padding-top:5px;
+    }
+
+    li{
+    }
+
+    li a{
+       color: #888;
+           display: block;
+           font-size: 14px;
+           padding: 10px 13px;
+           border-top: 1px solid transparent;
+                     border-bottom  : 1px solid #transparent;
+    }
+    li:hover{
+        background:#000;
+    }
+    }
+#signup,span{float:right;font-size:22px;padding: 18px 0 0px;
     a{
     color:#666666;
     display: block;
 }
+
 }
 #signup 			{color:@white}
     }
@@ -514,7 +551,8 @@ input{
 .grey-box.search{
     padding:10px 0 3px 27px;
     background: url('../images/search.png') no-repeat 15px 12px #2a2a2a;
-    margin-top:6px;
+    float:right;
+    margin-top:10px;
 
 }
 input:focus{
