@@ -3131,7 +3131,9 @@ right:-25px;
   p { padding:10px; background-color:#000; color:#fff; font-weight:bold; }
 }
 
-
+#profile_section_container{
+margin-top:30px;
+}
 
 
 /*---------------------------------------------------
