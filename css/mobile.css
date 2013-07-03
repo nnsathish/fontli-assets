@@ -142,7 +142,7 @@
                 header.main
                  {
                     color: #666666;
-                    padding: 4% 0 3% 4%;
+                    padding: 4% 0 3% 4% !important;
                     overflow:hidden;
                 .primary span {
                 float:left;
@@ -325,7 +325,7 @@
             position:relative;
             bottom:120px;
             overflow:hidden;
-            top:-288px;
+            top:-288px !important;
             }
             #secondaryHeader{
             padding:3% 2%;
