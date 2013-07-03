@@ -72,7 +72,7 @@ header.main .secondary {font-size: 25px;font-weight: bold;width: 512px;line-heig
 blockquote{
     color:@grey;font-size:16px;margin-left:225px;padding:left;width: 470px;float: left;
     a.avatar img{
-    vertical-align:top;
+    vertical-align:bottom;
     }
 p		{width: 383px;display: inline-block;vertical-align: 30%;font-size: 13px;line-height: 22px;margin-left: 10px;}
     }
@@ -555,16 +555,6 @@ input{
     margin-top:10px;
 
 }
-input:focus{
-background:#fff;
-color:#4d4d4d;
-width:160px;
-.grey-box.search{
- background: url("../images/search.png") no-repeat scroll 15px 12px #FFFFFF;
- box-shadow: 1px 2px 1px 1px rgba(0, 0, 0, 0.42) inset;
-}
-
-}
 .grey-box.up{
     background: url('../images/arrow-up-a.png') no-repeat 12px 12px #2a2a2a;
     padding:20px;
@@ -579,7 +569,7 @@ width:160px;
     background: url('../images/twitter-quote.png') no-repeat -5px 0px #2a2a2a;
     box-shadow: 8px 7px 10px 4px rgba(0, 0, 0, 0.5) inset;
     .img-mask{
-        background: none repeat scroll 0 0 transparent;
+           background: none repeat scroll 0 0 transparent;
            border-radius: 50px 50px 50px 50px;
            display: inline-block;
            float: left;
@@ -598,7 +588,7 @@ width:160px;
                      border:none;}
     }
     div{
-    		  background-clip: padding-box;
+                background-clip: padding-box;
                 background-color: #FF0000;
                 border: 2px solid #FFFFFF;
                 border-radius: 4px 4px 4px 4px;
@@ -1917,12 +1907,14 @@ div.limelight-content{
     }
 
 div.user-detail{
-
-
     float:left;
     margin-left:12px;
     padding-top:24px;
 
+ul{
+overflow:hidden;
+width:275px;
+}
     a{ font-size: 14px;display:block;margin-bottom: 2px;color: #aaaaaa;font-weight:bold;text-align:left;}
 
 ul.subtext{
@@ -2202,7 +2194,7 @@ padding-top:3px;
       }
       a.spotted-img{
       display: block;
-      overflow: auto;
+      overflow: hidden;
       }
 }
 li:first-child{
@@ -2955,7 +2947,7 @@ li{
     padding: 10px;
    box-shadow: 1px 0 6px 0 rgba(0, 0, 0, 0.3),-1px 0 6px 0 rgba(0, 0, 0, 0.3);
    a{
-   overflow:auto;
+   overflow:hidden;
    display:block;
    }
 }
@@ -3070,7 +3062,7 @@ height:157px;
 }
  div.split{
   float: right;
-  height: 74px;
+  height: 71px;
   img{
   position: relative!important;
    float: right;
