@@ -9,11 +9,12 @@ $(document).ready(function() {
     $('.popup .view-typetalk').trigger('click');
     $('input[name=comment]').focus();
   });
+  prevPageUrl = '';
   $('.popup .cross,.signin .img-cross').live('click', function() {
     $('#popup_container').html('').hide();
     $('#popup_loader').hide(); // just in case
     $("body").css("overflow", "inherit");
-    if(typeof(prevPageUrl) != 'undefined') {
+    if(prevPageUrl != '') {
       history.pushState('data', '', prevPageUrl);
     }
   });
@@ -21,7 +22,7 @@ $(document).ready(function() {
     if (e.keyCode == 27) { //ESC key
       $('#popup_container').html('').hide();
       $('#popup_loader').hide(); // just in case
-      if(typeof(prevPageUrl) != 'undefined') {
+      if(prevPageUrl != '') {
         history.pushState('data', '', prevPageUrl);
       }
       $("body").css("overflow", "inherit");
@@ -71,6 +72,7 @@ $(document).ready(function() {
         $('#popup_container .left-pop').fadeOut(0, function() {
           hideAjaxLoader(true);
           $('#popup_container .left-pop').html(leftPop);
+          history.pushState('data', '', $('#permalink_url').attr('data'));
           $('#popup_container .right-pop.typetalk').html(rightPop1);
           $('#popup_container .right-pop.spotted').html(rightPop2);
         }).fadeIn(400, function() {
@@ -171,6 +173,16 @@ $(document).ready(function() {
       }
     });
   });
+  $('.search input[name=search]').live('keyup.autocomplete', function(){
+    $(this).autocomplete({
+      source: '/search-autocomplete',
+      minLength: 3,
+      select: function(e, ui) {
+        if(!(ui.item)) return false;
+        $(this).parents('form').submit();
+      }
+    });
+  });
   $('.qrcode a, .qrcode-links a').click(function() {
     var klass = $(this).attr('class');
     var offset = $(window).scrollTop();
@@ -258,6 +270,8 @@ function photoDetailPopup(id, url) {
       hideAjaxLoader(true);
       //$("body").css("overflow", "hidden");
       $('#popup_container').html(data);
+      prevPageUrl = location.href;
+      history.pushState('data', '', $('#permalink_url').attr('data'));
       centerPopup('.popup');
       setTypetalkHeight();
       enableScrollBars('.aa-typetalk');
