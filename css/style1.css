@@ -28,9 +28,7 @@ display:none;
 div.set3b span.pop-disclaimer{
 	display: inline-block;
 }
-.right-pop header a.settings,.right-pop header a.cross{
-	display: none;
-}
+
 .right-pop .content-b .comment-box .comment img.follow-btn{
 	display: none;
 }
