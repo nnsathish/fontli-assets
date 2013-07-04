@@ -112,6 +112,7 @@ li div{
 img{
     position: absolute;
     left:5px;
+    top:2px;
 }
 box-shadow: 0 37px 58px -21px #000000 inset;
 position: relative;
@@ -253,7 +254,7 @@ i{
      margin:0px 10px 20px 0;
  section{
      background-color: #f9f9f9;
-     margin-left:5px;
+     margin-left:5px !important;
      height:350px;
      border:1px solid #cfcfcf;
      position: relative;
@@ -353,7 +354,7 @@ div{
     display: inline-block;
 section{
     background-color: #f9f9f9;
-
+    margin-left:5px !important;
     height:350px;
     border:1px solid #cfcfcf;
     position: relative;
@@ -1254,13 +1255,14 @@ a{
 
     .like-box{
         overflow: auto;
+        border-bottom:1px solid #CCCCCC;
         padding:0 6px 0 0;
          input[type="text"]{
             border:none;
             height: 30px;
             width: 100%;
-             background: url("../images/patterna.png") repeat-x scroll 0 0 transparent;
-             border-top:1px solid #ddd;
+            background: url("../images/patterna.png") repeat-x scroll 0 0 transparent;
+            border-top:1px solid #ddd;
          }
          input[type="text"].search-input-bottom{
          border-bottom:1px solid #ddd;
@@ -2860,7 +2862,7 @@ width:70px;
 .pro-header-s{
 box-shadow: 0 3px 3px rgba(0, 0, 0, 0.15);
 height: 66px;
-
+background:#fff;
 div span{
 color: #999999;
 float: left;
@@ -2936,11 +2938,12 @@ border-bottom:1px solid #999;
 }
 ul{
  margin: 11px 0px;
+ max-height: 356px !important;
+ overflow: hidden;
 li{
   background: none repeat scroll 0 0 #FFFFFF;
     float: left;
-    margin-right: 27px;
-    margin-bottom:10px;
+    margin:0 11px 10px 11px;
     padding: 10px;
    box-shadow: 1px 0 6px 0 rgba(0, 0, 0, 0.3),-1px 0 6px 0 rgba(0, 0, 0, 0.3);
    a{
@@ -2949,13 +2952,13 @@ li{
    }
 }
 li:last-child{
-margin-right:0;
 float:left;
 }
 }
 }
 div.people-list{
-overflow:auto;
+overflow:hidden;
+max-height:364px;
 h1{
  border-bottom: 1px solid #CCCCCC;
     color: #797979;
@@ -2996,10 +2999,10 @@ h1{
     background: none repeat scroll 0 0 #FFFFFF;
     border: 1px solid #FFFFFF;
     height: auto;
-    margin: 10px 0 10px 0;
+    margin: 10px 11px;
     overflow: auto;
     padding: 31px 0 31px 20px;
-    width: auto;
+    width: 278px;
     float:left;
       box-shadow: 1px 0 6px 0 rgba(0, 0, 0, 0.3);
 }
@@ -3008,6 +3011,8 @@ h1{
 }
 }
 .results-list{
+ max-height: 363px;
+overflow: hidden !important;
   h1{
    border-bottom: 1px solid #CCCCCC;
     box-shadow: 0 1px 0 #FFFFFF;
@@ -3031,7 +3036,7 @@ h1{
     background: none repeat scroll 0 0 #FFFFFF;
     border: 1px solid #FFFFFF;
     padding: 23px 13px 32px;
-   margin: 10px 0 10px 35px;
+   margin: 10px 11px;
 
     text-align: center;
     width: auto;
@@ -3059,7 +3064,7 @@ height:157px;
 }
  div.split{
   float: right;
-  height: 71px;
+  height: 69px;
   img{
   position: relative!important;
    float: right;
