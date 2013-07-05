@@ -65,23 +65,26 @@ $(document).ready(function() {
       url: url,
       data: {id:id},
       success: function(data, textStatus) {
+        var reponseScript = $(data).filter("script");
+        $.each(reponseScript, function(idx, val) { eval(val.text); } );
+
         var leftPop = $(data).first().find('.left-pop').html();
-        var rightPop1 = $(data).first().find('.right-pop.typetalk').html();
-        var rightPop2 = $(data).first().find('.right-pop.spotted').html();
+        var rightPop = $(data).first().find('.right-pop').html();
         $('#popup_container .right-pop').hide();
         $('#popup_container .left-pop').fadeOut(0, function() {
           hideAjaxLoader(true);
           $('#popup_container .left-pop').html(leftPop);
           history.pushState('data', '', $('#permalink_url').attr('data'));
-          $('#popup_container .right-pop.typetalk').html(rightPop1);
-          $('#popup_container .right-pop.spotted').html(rightPop2);
+          $('#popup_container .right-pop').html(rightPop);
         }).fadeIn(400, function() {
-          $('#popup_container .right-pop.typetalk').show();
+          $('#popup_container .right-pop').show();
           setTypetalkHeight();
           setupPopupNavLinks(id);
           enableScrollBars('.aa-typetalk');
         });
         elem.show();
+        twttr.widgets.load();
+        FB.XFBML.parse();
       },
       error: function() {
         hideAjaxLoader(true);
@@ -268,14 +271,20 @@ function photoDetailPopup(id, url) {
     data: {id:id},
     success: function(data, textStatus) {
       hideAjaxLoader(true);
+      var reponseScript = $(data).filter("script");
+      $.each(reponseScript, function(idx, val) { eval(val.text); } );
       //$("body").css("overflow", "hidden");
       $('#popup_container').html(data);
+
       prevPageUrl = location.href;
       history.pushState('data', '', $('#permalink_url').attr('data'));
+
       centerPopup('.popup');
       setTypetalkHeight();
       enableScrollBars('.aa-typetalk');
       setupPopupNavLinks(id);
+      twttr.widgets.load();
+      FB.XFBML.parse();
     },
     error: function() {
       hideAjaxLoader(true);
@@ -365,7 +374,7 @@ function slideSwitch() {
 }
 // use this to position the view spotted/view typetalk link at the bottom of the popup.
 function setTypetalkHeight() {
-  var totalHeight = 424; // 40px padding and 41px like-box height
+  var totalHeight = 428; // 615px - 55px(header) - 29px(padding) - 38px(like-box) - 65px(margin-bottom)
   captionHeight = $('.right-pop .content-a').height();
   $('.right-pop .content-b').css('height', (totalHeight - captionHeight) + 'px');
 }
