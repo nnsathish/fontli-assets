@@ -231,53 +231,45 @@ $(document).ready(function() {
 });
 
 // window load events
-function loadMoreImages() {
-    var limit = 5;
-    var i = 0;
-    $('img[xsrc]').each(function() {
-        if(i < limit) {
-            $(this).attr('src', $(this).attr('xsrc'));
-            $(this).removeAttr('xsrc');
-        }
-        i++;
-    });
-}
+$(window).load(function() {
+  loadMoreImages('next');
 
-$(document).ready(function() {
-    loadMoreImages();
-    $('.controls a').click(function() {
-     loadMoreImages();
-      });
+  userCountdownTimer = 0;
+  $('.user-countdown strong').each(function() {
+    var countArray = $.map($('.user-countdown').attr('data-count').split(''), Number);
+    var elem = $(this);
+    var digit = countArray[parseInt(elem.attr('class'))];
+    for(var i=1; i <= digit; i++) { updateCounter(i, digit, elem) }
+  });
+  timeout = setTimeout(function() {
+    $('.controls .next-page').trigger('click');
+  }, userCountdownTimer + 7000);
+  interval = null;
+  setInterval(function() {
+    if('#slideshow') slideSwitch();
+  }, userCountdownTimer + 8000);
+  $('.controls a').click(function() {
+    var direction = $(this).attr('class').replace('-page', '');
+    loadMoreImages(direction);
+    clearTimeout(timeout);
+    clearInterval(interval);
+  });
 });
 
-//  $('img[xsrc]').each(function() {
-//    var elem = $(this);
-//    var src = elem.attr("xsrc");
-//    elem.removeAttr('xsrc').attr('src', src).load(function() {
-//      if(elem.get(0).complete && elem.get(0).className != 'hidden-img')
-//        elem.show(); // its already visible
-//    });
-//  });
-//  userCountdownTimer = 0;
-//  $('.user-countdown strong').each(function() {
-//    var countArray = $.map($('.user-countdown').attr('data-count').split(''), Number);
-//    var elem = $(this);
-//    var digit = countArray[parseInt(elem.attr('class'))];
-//    for(var i=1; i <= digit; i++) { updateCounter(i, digit, elem) }
-//  });
-//  timeout = setTimeout(function() {
-//    $('.controls .next-page').trigger('click');
-//  }, userCountdownTimer + 7000);
-//  interval = null;
-//  setInterval(function() {
-//    if('#slideshow') slideSwitch();
-//  }, userCountdownTimer + 8000);
-//  $('.controls a').click(function() {
-//    clearTimeout(timeout);
-//    clearInterval(interval);
-//  });
-//});
+function loadMoreImages(direction) {
+  var limit = 5;
+  if(direction == 'prev') limit = limit * -1;
 
+  $('img[class=hidden-img][xsrc]').slice(limit).each(function() {
+    $(this).attr('src', $(this).attr('xsrc'));
+    $(this).removeAttr('xsrc');
+  });
+
+  $('img[class!=hidden-img][xsrc]').slice(limit).each(function() {
+    $(this).attr('src', $(this).attr('xsrc'));
+    $(this).removeAttr('xsrc');
+  });
+}
 function photoDetailPopup(id, url) {
   showAjaxLoader(true);
   if(interval) clearInterval(interval);
