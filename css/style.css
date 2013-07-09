@@ -256,6 +256,7 @@ i{
      background-color: #f9f9f9;
      margin-left:5px !important;
      height:350px;
+     width:320px;
      border:1px solid #cfcfcf;
      position: relative;
  .images{
@@ -939,16 +940,18 @@ color:#4d4d4d;
 
 .set1.icons{
 left:10px;
-display:none;
 }
 
+.popup.open .set1 {
+    display: none;
+}
 .set1 {
     position: absolute;
     overflow: hidden;
     left: 445px;
     cursor: pointer;
     top:10px;
-    display:none;
+    display:block;
 li{
     display: inline;
     float: left;
