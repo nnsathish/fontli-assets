@@ -155,7 +155,7 @@ $(document).ready(function() {
     animateLikesPopup();
     hideSpotContent();
     $('.right-pop .like-box.pop-nav a').removeClass('strong');
-    $(this).addClass('strong');
+    $('.right-pop .like-box.pop-nav a.view-likes').addClass('strong');
     $('.right-pop .bottom-nav').hide();
   });
   $('.right-pop .like-box.pop-nav a.spot').live('click', function() {
@@ -215,10 +215,10 @@ $(document).ready(function() {
     var text = $(this).html();
     var desc2 = $('.desc2');
     if(text == 'View more') {
-      desc2.show();
+      desc2.removeClass('hidden');
       $(this).html('View less'); }
     else {
-      desc2.hide();
+      desc2.addClass('hidden');
       $(this).html('View more');
     }
   });
@@ -264,7 +264,6 @@ function loadMoreImages(direction) {
     $(this).attr('src', $(this).attr('xsrc'));
     $(this).removeAttr('xsrc');
   });
-
   $('img[class!=hidden-img][xsrc]').slice(limit).each(function() {
     $(this).attr('src', $(this).attr('xsrc'));
     $(this).removeAttr('xsrc');
@@ -384,8 +383,9 @@ function slideSwitch() {
 // use this to position the view spotted/view typetalk link at the bottom of the popup.
 function setTypetalkHeight() {
   var totalHeight = 428; // 615px - 55px(header) - 29px(padding) - 38px(like-box) - 65px(margin-bottom)
-  captionHeight = $('.right-pop .content-a').height();
-  $('.right-pop .content-b').css('height', (totalHeight - captionHeight) + 'px');
+  var captionHeight = $('.right-pop .content-a').height();
+  var recentLikesHeight = $('.right-pop .recent-likes').height(); 
+  $('.right-pop .content-b').css('height', (totalHeight - captionHeight - recentLikesHeight) + 'px');
 }
 function updateCounter(val,digit,elem) {
   var klass = elem.attr('class');
