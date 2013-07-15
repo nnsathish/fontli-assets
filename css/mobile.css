@@ -370,5 +370,8 @@
             footer.main{
             padding:5% 3%;
             }
+            .right-pop.spotted{
+            display:block;
+            }
 
       }

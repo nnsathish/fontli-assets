@@ -124,6 +124,11 @@ span{
     font-size:25px;
     text-shadow: 0px 2px #000;
 }
+span.subtext{
+    font-size: 14px;
+    top: -25px;
+    opacity: 0.9;
+}
     }
     }
 .list-a-expanded{
@@ -544,7 +549,7 @@ input{
     color: #ccc;
     font-size: 14px;
     background-color: #2a2a2a;
-    width:120px;
+    width:150px;
      margin: 1px 10px 5px;
 
 }
@@ -1167,6 +1172,8 @@ margin:0 auto;
     background:#f3f3f3;
     }
     }
+
+
 .right-pop {
     width: 384px;
     height: 615px;
@@ -3065,11 +3072,11 @@ overflow: hidden !important;
 }
 .img-tile-container{
     overflow: hidden;
-    width: 305px;
+    width: 300px;
 .img-tile{
 float:left;
-width:157px;
-height:157px;
+width:150px;
+height:150px;
 }
  div.split{
   float: right;
