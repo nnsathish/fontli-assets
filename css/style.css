@@ -1189,6 +1189,12 @@ header{
     font-size: 22px;
     text-align: center;
     padding:21px 0px 11px 7px;
+    .header-shadow{
+    box-shadow: 0 8px 6px -6px #000000;
+    height: 70px;
+    position: absolute;
+    width: 100%;
+    }
 a{
     display: inline-block;
     cursor: pointer;
