@@ -3117,6 +3117,7 @@ z-index: 9999;
 margin-top:30px;
 div.feed-item{
 display:inline-block;
+margin-bottom:20px;
 }
 }
 div.like-box .loc-img{
@@ -3152,6 +3153,10 @@ margin-top:30px;
 
 .comment-box div.comment button.button-a{
 display:none;
+}
+
+.banner-cta.-before{
+margin-right:5px;
 }
 
 
