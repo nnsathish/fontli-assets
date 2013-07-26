@@ -74,7 +74,7 @@ blockquote{
     a.avatar img{
     vertical-align:bottom;
     }
-p		{width: 383px;display: inline-block;vertical-align: 30%;font-size: 13px;line-height: 22px;margin-left: 10px;}
+p		{width: 383px;display: inline-block;vertical-align: 100%;font-size: 13px;line-height: 22px;margin-left: 10px;}
     }
 cite				{font-weight:bold;color:#000}
 a.storify-link { float:right; font-size:10px; color:#000; }
@@ -1128,6 +1128,7 @@ a{
     position: relative;
     z-index: 1;
     background-color: #fff;
+    box-shadow: 1px 0 3px 0 #CCCCCC inset;
 }
 .popup{
     margin: 0 auto;
@@ -1181,10 +1182,10 @@ margin:0 auto;
     float: left;
     padding: 0px 10px;
     background-color: #fff;
-    box-shadow: 1px 0 2px 0 #CCCCCC inset;
+
     z-index: 0;
 header{
-    border-bottom: 1px solid #d3d3d3;
+    border-bottom: 1px solid #eee;
     color: @darkgrey;
     font-size: 22px;
     text-align: center;
@@ -1220,7 +1221,7 @@ a.cross{
     }
 .content-a{
     padding: 14px 9px;
-    border-bottom: 1px solid #d3d3d3;
+    border-bottom: 1px solid #eee;
     overflow: hidden;
 ul{
 
@@ -1274,7 +1275,7 @@ a{
 
     .like-box{
         overflow: auto;
-        border-bottom:1px solid #CCCCCC;
+        border-bottom:1px solid #eee;
         padding:0 6px 0 0;
          input[type="text"]{
             border:none;
@@ -1323,7 +1324,7 @@ a{
 
 .comment-box{
     padding:0px 11px;
-    margin-top:20px;
+    margin-top:10px;
 a.comments{
     font-size: 14px;
     color: @lightgrey;
@@ -1453,7 +1454,7 @@ span{
 .set3c img.user-spotted,.set3c img.selected{
 visibility:visible;
 }
-img {vertical-align:-5%;}
+/*img {vertical-align:-5%;}*/
     .spotted{
     margin-top:5px;
     display:none;
@@ -3161,6 +3162,7 @@ margin-right:5px;
 
 .recent-likes{
 padding:0 0 10px !important;
+border-bottom:1px solid #eee;
 }
 .view-likes{
 color:#666;
