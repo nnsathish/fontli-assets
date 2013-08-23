@@ -337,10 +337,13 @@ i{
      }
  li.profile-detail{
  span, a{
-     font-size:14px;
+     font-size:12px;
      color: @lightgrey;
-     margin-right:10px;
+     margin-right:5px;
      display: inline-block;
+ }
+ a:last-child{
+ margin-right:0;
  }
  a{
      text-decoration: underline;
@@ -3244,7 +3247,7 @@ border:none;
 background: none repeat scroll 0 0 #F4F4F4 !important;
 box-shadow: 2px 5px 5px rgba(0, 0, 0, 0.3) !important;
 }
-.ui-state-hover{
+.ui-widget-content .ui-state-hover{
 background:#ECECEC !important;
 border-bottom:1px solid #fff !important;
 border-top:1px solid #ccc !important;
