@@ -1947,7 +1947,7 @@ div.left-content .limelight-content{
  margin-right:10px;
  }
 div.limelight-content{
-    padding:0 15px 15px;width: 430px;float:left;border-bottom: 1px solid #d2d2d2;border-top: 1px solid #fafafa;
+    padding:0 15px 15px;width: 430px;height:208px;float:left;border-bottom: 1px solid #d2d2d2;border-top: 1px solid #fafafa;
     background-color:#fff;box-shadow: 1px 0 6px 0 rgba(0,0,0,0.3); margin-bottom:18px;
     a.pro-img-big{
        border-radius: 100px 100px 100px 100px;
@@ -1967,7 +1967,7 @@ div.user-detail{
 
 ul{
 overflow:hidden;
-width:275px;
+width:278px;
 }
 li{
     border-right: 1px solid #CCCCCC !important;
@@ -1982,6 +1982,7 @@ ul.subtext{
 float:right;
 color:#666;
 font-weight:bold;
+clear:both;
 margin-top:10px;
 li{
 border-right:none !important;
@@ -3024,6 +3025,7 @@ li{
     margin:0 11px 22px 10px;
     padding: 10px;
     width:150px;
+    height: 150px;
    box-shadow: 1px 0 6px 0 rgba(0, 0, 0, 0.3),-1px 0 6px 0 rgba(0, 0, 0, 0.3);
    a{
    overflow:hidden;
@@ -3251,6 +3253,33 @@ box-shadow: 2px 5px 5px rgba(0, 0, 0, 0.3) !important;
 background:#ECECEC !important;
 border-bottom:1px solid #fff !important;
 border-top:1px solid #ccc !important;
+color:#888;
+}
+.ui-widget-content a {
+    border: 1px solid transparent;
+}
+.ui-menu .ui-menu-item a{
+color:#888;
+}
+.ui-menu{
+padding:0;
+border-radius:0;
+}
+.ui-corner-all, .ui-corner-bottom, .ui-corner-right, .ui-corner-br {
+    border-bottom-right-radius: 4px;
+}
+.ui-corner-all, .ui-corner-bottom, .ui-corner-left, .ui-corner-bl {
+    border-bottom-left-radius: 4px;
+}
+.ui-corner-all, .ui-corner-top, .ui-corner-right, .ui-corner-tr {
+    border-top-right-radius: 4px;
+}
+.ui-corner-all, .ui-corner-top, .ui-corner-left, .ui-corner-tl {
+    border-top-left-radius: 4px;
+}
+.ui-corner-all a:hover{
+border-left:1px solid transparent;
+border-right:1px solid transparent;
 }
 
 .block-b > a {
