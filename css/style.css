@@ -3145,10 +3145,11 @@ height:150px;
   height: 75px;
   border-right:2px solid #000;
   img{
-  position: relative!important;
+   position: relative!important;
    float: right;
-   height:75px;
+   height:73px;
    left:0!important;
+   border-right: 2px solid #000;
   }
 }
 }
@@ -3288,6 +3289,16 @@ border-right:1px solid transparent;
 .block-b > a {
     color: #666666;
     font-size: 14px;
+}
+
+li.banner-cta div i{
+    background: repeating-linear-gradient(-60deg, white, white 1px, #000000 1px, #000000 1px) repeat scroll 0 0 transparent;
+    bottom: 0;
+    left: 0;
+    opacity: 0.2;
+    position: absolute;
+    right: 0;
+    top: 0;
 }
 
 /*---------------------------------------------------
