@@ -3,7 +3,7 @@
 @lightgrey: #999999;
 @darkgrey: #333;
 
-@media only screen and (max-device-width: 800px) and (max-width: 800px) {
+@media screen and (max-device-width: 800px), screen and (max-width: 800px) {
   body{
   min-width:100%;
 
@@ -484,7 +484,7 @@
             }
           }
 
-          footer
+          footer {
           a.profile-img{
           width:75px;
           height:75px;
@@ -494,20 +494,19 @@
           padding:0 0 0 90px;
 
           }
-        }
 
+        }
       }
 
-
-.........................Common Inside Page Header css..........................................
-.......... Fontli Logo and Search bar.............................
+/* .........................Common Inside Page Header css..........................................
+.......... Fontli Logo and Search bar............................. */
 
 header.main {
     padding: 3% 2% 2% 2% !important;
   .tertiary {
   padding: 0;
   height: auto;
-    
+
     #logo {
     background: url(<%= asset_path('logo.png') %>) no-repeat;
     height: 50px;
@@ -523,7 +522,7 @@ header.main {
     margin: 2% 0 0 0;
     background-size: auto 50%;
     width: 40%;
-      
+
       input {
       width: 90%;
       font-size: 16px;
@@ -559,12 +558,12 @@ header.main {
                display: none;
               }
             }
-        }    
-     }   
+        }
+     }
   }
 }
 
-............................ Stream Section Popular ...............
+/* ............................ Stream Section Popular ............... */
 
 #stream section {
   #popular_section_container{
@@ -577,7 +576,7 @@ header.main {
 
         .feed-item {
           margin-bottom: 3%;
-        }     
+        }
           section{
           width:95%;
           border: 5px solid #fff;
@@ -617,11 +616,12 @@ header.main {
             padding: 0;
 
             }
-          } 
-      }           
-  } 
+          }
+       }
+    }
+  }
 
-............................ Stream Section Limelight .............
+/* ............................ Stream Section Limelight ............. */
 
   #limelight-markup div{
 
@@ -675,7 +675,7 @@ header.main {
                 margin: 0;
                 height: auto;
               }
-            }  
+            }
           }
         }
       }
@@ -731,7 +731,7 @@ header.main {
                 margin: 0;
                 height: auto;
               }
-            }  
+            }
           }
         }
       }
@@ -740,7 +740,7 @@ header.main {
 
 }
 
-............................ Stream Section Recently Spotted .............
+/* ............................ Stream Section Recently Spotted ............. */
 
 #popular_section_container {
     padding: 0;
@@ -768,4 +768,4 @@ header.main {
           }
         }
       }
-             
+}
